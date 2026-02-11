@@ -62,7 +62,7 @@
 ```json
 {
   "nombre": "Anonimo",
-  "apellido: "Veneciano"
+  "apellido": "Veneciano"
 }
 ```
 
