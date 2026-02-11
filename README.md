@@ -1,10 +1,3 @@
-<div style="background-image: url('fondomark.jpg'); 
-            background-size: cover; 
-            padding: 50px; 
-            color: white;">
-  <p>Hi this is markdown.</p>
-</div>
-
 # THE MARKDOWN
 
 ## Text
