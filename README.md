@@ -7,45 +7,27 @@
 ## Ingenieria Informatica (FI-UBA)
 
 > ***I'm learning news ...***
-
-### [Emojis](https://emojipedia.org/)
+> 
+> Music[like](https://youtube.com)
 
 <div align="center">
 <img width="256" height="256" alt="imagen" src="https://github.com/user-attachments/assets/4cf1e839-797f-4844-899b-df44909d91c8" />
 </div>
 
-## List
+#### [Emojis](https://emojipedia.org/)
 
-> 1. Writing
-> 2. Writing
->   1. Writing
->   2. Writing
+## languages
 
-> - Writing
-> - Writing
+- [x] Html
+- [x] Css
+- [ ] js
+- [x] Python
+- [x] FLask (Python)
+- [ ] more..
 
-- [x] opcion 1
-- [ ] opcion 2 
-
-## Code 
-
-> Writing `code`
-> Writing ``new `a` code``
->
-
-## Enlaces
-
-> search is [Miau Miau](https://youtube.com)
-
-## Imagenes
+## Proyectos
 
 > ![the picture is good](/static/images/pintura.jpg "la pintura")
-
-<div align="center">
-  <img src="" witdh="50%" alt="description"/>
-</div>
-
-## Tabla
 
 |sintaxis   | description | texto de prueba|
 | :---      | :----:      | ---:           |
