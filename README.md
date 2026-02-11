@@ -23,10 +23,33 @@
 > Writing ``new `a` code``
 >
 
-## enlaces
+## Enlaces
 
 > search is [Miau Miau](https://youtube.com)
 
-## imagenes
+## Imagenes
 
 > ![the picture is good](/static/images/pintura.jpg "la pintura")
+
+## Tabla
+
+|sintaxis   | description | texto de prueba|
+| :---      | :----:      | ---:           |
+|encabezado | titulo      | texto          |
+
+## Codigo
+
+```
+{
+  "nombre": "Anonimo",
+  "apellido: "Veneciano"
+}
+```
+
+```json
+{
+  "nombre": "Anonimo",
+  "apellido: "Veneciano"
+}
+```
+
