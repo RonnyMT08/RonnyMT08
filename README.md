@@ -1,13 +1,52 @@
-## Hola 👋
+<div align="center">
+<img width='100%' height='256' alt='imagen' src='/fondomark.jpg'/>
+</div>
 
-![Tux, the Linux mascot](/assets/images/tux.png)
+<h1 align="center">HI, I'M RONNY MAMANI TORREZ</h1>
 
-# RONNY MAMANI TORREZ
+## Ingenieria Informatica (FI-UBA)
 
-> INGENIERIA INFORMATICA
+> ***I'm learning news ...***
+> 
+> Music[like](https://youtube.com)
 
-> ronnymtorrez@gmail.com
+<div align="center">
+<img width="256" height="256" alt="imagen" src="https://github.com/user-attachments/assets/4cf1e839-797f-4844-899b-df44909d91c8" />
+</div>
 
-> rmamanit@fi.uba.ar
+#### [Emojis](https://emojipedia.org/)
 
-> +54 9 3876331854
+## languages
+
+- [x] Html
+- [x] Css
+- [ ] js
+- [x] Python
+- [x] FLask (Python)
+- [ ] more..
+
+## Proyectos
+
+> ![the picture is good](/static/images/pintura.jpg "la pintura")
+
+|sintaxis   | description | texto de prueba|
+| :---      | :----:      | ---:           |
+|encabezado | titulo      | texto          |
+
+## Codigo
+
+```
+{
+  "nombre": "Anonimo",
+  "apellido": "Veneciano"
+}
+```
+
+
+```json
+{
+  "nombre": "Anonimo",
+  "apellido": "Veneciano"
+}
+```
+
