@@ -2,7 +2,7 @@
 
 > ## 1. Directorio para el proyecto
 
-Crea un directorio adecuado para almacenar tu proyecto: `/Proyecto/...`
+Crea un directorio adecuado para almacenar tu proyecto: `home/Proyecto/...`
 
 > [!IMPORTANT]
 > Descarga el repositorio de github
@@ -27,9 +27,9 @@ Crea un directorio adecuado para almacenar tu proyecto: `/Proyecto/...`
 
 ```
 DB_HOST=localhost
-DB_USER=EstanciaBruno
+DB_USER=nameUser
 DB_PASS=aaaaaaa
-DB_NAME=HotelBruno
+DB_NAME=proyectodb
 PORT=5001
 ```
 
@@ -37,13 +37,13 @@ PORT=5001
 
 > ## Code:
 
-Source code: `/home/EstanciaBrunoBack/Grupo-IDS-TP2/Backend`
+Source code: `/home/proyecto/P1Backend`
 
-working directory: `/home/EstanciaBrunoBack/GrupoIDS-TP2/Backend` 
+working directory: `/home/proyecto/P1Backend` 
 
 > ## Virtualenv:
 
-`/home/EstanciaBrunoBack/Grupo-IDS-TP2/Banckend/.env`
+`/home/proyecto/P1Backend/.env`
 
 > ## wsgi.py
 
@@ -51,10 +51,10 @@ working directory: `/home/EstanciaBrunoBack/GrupoIDS-TP2/Backend`
 import sys
 import os
 
-os.environ["DB_HOST"] = "EstanciaBruno.mysql.pythonanywhere-services.com"
-os.environ["DB_USER"] = "EstanciaBruno"
+os.environ["DB_HOST"] = "proyecto.mysql.pythonanywhere-services.com"
+os.environ["DB_USER"] = "proyecto"
 os.environ["DB_PASS"] = "aaaaaa"
-os.environ["DB_NAME"] = "EstanciaBruno$HotelBruno"
+os.environ["DB_NAME"] = "proyecto$proyectodb"
 
 os.environ["MAIL_USERNAME"] = "aplicarmt@gmail.com"
 os.environ["MAIL_PASSWORD"] = "aaaaaaaaaaaaa"
@@ -62,7 +62,7 @@ os.environ["MAIL_DEFAULT_SENDER"] = "aplicarmt@gmail.com"
 
 
 # add your project directory to the sys.path
-project_home = '/home/EstanciaBruno/HotelBrunoBack/Grupo-IDS-TP2/Backend'
+project_home = '/home/proyecto/P1Backend'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
@@ -73,7 +73,7 @@ application = create_app()
 
 ## Backend url
 
-![link]("htpps://EstanciaBruno.pythonanywhere.com")
+![link]("htpps://proyecto1.pythonanywhere.com")
 
 # MySql
 
@@ -81,8 +81,8 @@ application = create_app()
 > ![crea una base de datos manualmente]("https://...")
 > 
 > ```
-> Nombre:EstanciaBruno
-> Nombre deault: EstanciaBruno$default
+> Nombre:proyecto
+> Nombre deault: proyecto$default
 > Contraseña:aaaaaaaa
 > dirección del hos de la db: EstanciaBruno.mysql.pythonanyhwew-services.com
 > ```
@@ -90,15 +90,12 @@ application = create_app()
 > ## 2. Posibles cambios en tu proyecto original
 > ```
 > 
-> CREATE DATABASE EstanciaBruno$nombredb
+> CREATE DATABASE proyecto$nombredb
 >
 > En el archivo app.py
 > port= 3306
 >
-> BACKEND_URL = "https://EstanciaBruno.pythonanywhere.com"
+> BACKEND_URL = "https://proyecto.pythonanywhere.com"
 >
 > requests.post(BACKEND_URL + "/...", json=...)
 > ```
-
-
-
