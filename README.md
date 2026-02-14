@@ -1,7 +1,3 @@
-<div align="center">
-<img width='100%' height='256' alt='imagen' src='/fondomark.jpg'/>
-</div>
-
 <h1 align="center">HI, I'M RONNY MAMANI TORREZ</h1>
 
 <p align="left">
