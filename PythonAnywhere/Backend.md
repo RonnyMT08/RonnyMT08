@@ -1,27 +1,29 @@
-# Levantar tu proyecto Backend
+# Levantar tu proyecto Backend + Base de Datos
 
-> ## Logearte
+> ## 1. Directorio para el proyecto
 
-> ## Directorio para el proyecto
+Crea un directorio adecuado para almacenar tu proyecto: `/Proyecto/...`
 
-`/Proyecto/...`
+> [!IMPORTANT]
+> Descarga el repositorio de github
+>
+>``` bash
+>    git clone https://turepositorio.github.com
+>```
 
-Descarga el repositorio
+> [!CAUTION]
+> ### Crea tu entorno virtual.
+> ![como crear entono virtual]("https:...")
+>
+> ### Instala la librerias requeridas
+> ![como archivar]("https:...") tus librerias utilizadas en el archivo `requeriminetos.txt` para el backend
+>
+> ```
+>     pipenv install flask requerimientos
+> ```
 
-``` bash
-git clone https://...
-```
-
-> ## Crea tu entonovirtual.
-![como crear entono virtual]("https:...")
-
-> ## Instala la librerias requeridas
-
-```
-pipenv install flask requerimientos
-```
-
-> ## Achivo .env
+> ## 2. Achivo .env
+> modifica o crea un archivo .env y guarda tus variables locales
 
 ```
 DB_HOST=localhost
@@ -72,5 +74,31 @@ application = create_app()
 ## Backend url
 
 ![link]("htpps://EstanciaBruno.pythonanywhere.com")
+
+# MySql
+
+> ## 1. Crear una db
+> ![crea una base de datos manualmente]("https://...")
+> 
+> ```
+> Nombre:EstanciaBruno
+> Nombre deault: EstanciaBruno$default
+> Contraseña:aaaaaaaa
+> dirección del hos de la db: EstanciaBruno.mysql.pythonanyhwew-services.com
+> ```
+
+> ## 2. Posibles cambios en tu proyecto original
+> ```
+> 
+> CREATE DATABASE EstanciaBruno$nombredb
+>
+> En el archivo app.py
+> port= 3306
+>
+> BACKEND_URL = "https://EstanciaBruno.pythonanywhere.com"
+>
+> requests.post(BACKEND_URL + "/...", json=...)
+> ```
+
 
 
