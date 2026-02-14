@@ -43,25 +43,12 @@
 ## Ingenieria Informatica (FI-UBA)
 
 > ***I'm learning news ...***
-> 
-> Music[like](https://youtube.com)
-> 
-> Instagram[Ig](hhtps://instagram.com)
 
 <div align="center">
 <img width="256" height="256" alt="imagen" src="https://github.com/user-attachments/assets/4cf1e839-797f-4844-899b-df44909d91c8" />
 </div>
 
 #### [Emojis](https://emojipedia.org/)
-
-## languages
-
-- [x] Html
-- [x] Css
-- [ ] js
-- [x] Python
-- [x] FLask (Python)
-- [ ] more..
 
 ## Proyectos
 
