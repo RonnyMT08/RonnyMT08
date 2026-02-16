@@ -1,27 +1,11 @@
-# Aprender docker
-> ## Contenedores
-> versiones
-> base de datos
-> ....
-> se debe descargar una imagen!!
+# DOCKER
 
-
-> ## Repositorios para contenedores
-> Docker hub
->
-> ### Descargar imagen
-> 
-
-> podes ver las imagenes que tienes descagadas
-```
-  docker images
-```
-
-> podes versionar con `:version` 
-```
-  docker pull node:18
-  docker image rm node:18
-```
+## Descargar imagenes
+> ```
+> docker pull python:3.11-slim
+> docker images
+> docker image rm python:3.11-slim
+> ```
 
 > ## Creando contenedores
 > se crea contenedores en base a imagenes descargadas
@@ -63,13 +47,24 @@ docker run --name monguito -p27017:27017 -d mongo
 
 > ##  Docker file
 ```
-FROM node:18
+FROM python:3
 
-RUN mkdir -p /home/app
+WORKDIR /usr/src/app
 
-COPY . /home/app
+COPY requirements.txt ./
+RUN pip instal --no-cache-dir -r requirements.txt
 
-EXPOSE 3000
+COPY . .
 
-CMD ["node", "/home/index.js"]
+CMD ["python", "./home/index.py"]
 ```
+
+> correlo con:
+> ```
+> docker build -t my-python-app:1 .
+> ```
+
+> descargalo con:
+> ``` 
+> docker run it --rm --name my-running-app my-python-app
+> ```
