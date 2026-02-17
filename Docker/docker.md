@@ -46,25 +46,56 @@ docker run --name monguito -p27017:27017 -d mongo
 ```
 
 ## 4.  Docker file
-```
-FROM python:3
+para dockerizar tu proyecto
 
-WORKDIR /usr/src/app
+> ![IMPORTANT]necesitas tener los siguientes archivos
 
-COPY requirements.txt ./
+`app.py`, `requirements.txt`
+
+```docker
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
 RUN pip instal --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "./home/index.py"]
+EXPOSE 5000
+
+CMD ["flask", "run", "--host=0.0.0.0", "port=5000"]
 ```
 
-> correlo con:
-> ```
-> docker build -t my-python-app:1 .
-> ```
+el acrhivo `.dockerignore`
+```
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+```
 
-> descargalo con:
-> ``` 
-> docker run it --rm --name my-running-app my-python-app
-> ```
+> construye la imagen en la raiz del proyecto (aplicativo para otras pc)
+```bash
+docker build -t flask-app:name .
+```
+
+> levantar el contenedor con volumen con:
+```bash
+docker run -p 5000:5000 -v $(pwd):app -e FLASK_ENV=development flask-app:name
+```
+
+> confuguración de flask en modo desarrollo
+```python
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+```
+
+> correr con:
+```bash
+python app.py
+```
+
+## Docker compose
