@@ -3,13 +3,13 @@
 1. crea tu carpeta con:
 
 ```bash
-  python3 -m venv Frontend
+  python3 -m venv .fvenv
 ```
 
 2. activa el entorno:
    
 ```bash
-   source Frontend/bin/activate
+   source .fenv/bin/activate
 ```
 
 3. instala flask dentro del entorno:
