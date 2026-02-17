@@ -68,7 +68,7 @@ EXPOSE 5000
 CMD ["flask", "run", "--host=0.0.0.0", "port=5000"]
 ```
 
-el acrhivo `.dockerignore`
+el archivo `.dockerignore`
 ```
 __pycache__/
 *.pyc
@@ -87,7 +87,7 @@ docker build -t flask-app:name .
 docker run -p 5000:5000 -v $(pwd):app -e FLASK_ENV=development flask-app:name
 ```
 
-> confuguración de flask en modo desarrollo
+> configuración de flask en modo desarrollo
 ```python
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
