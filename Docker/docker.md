@@ -1,13 +1,13 @@
 # DOCKER
 
-## Descargar imagenes
+## 1. Descargar imagenes
 > ```
 > docker pull python:3.11-slim
 > docker images
 > docker image rm python:3.11-slim
 > ```
 
-> ## Creando contenedores
+## 2. Creando contenedores
 > se crea contenedores en base a imagenes descargadas
 
 ```
@@ -28,7 +28,7 @@ docker ps
 docker ps -a
 ```
 
-> ## Port mapping
+## 3. Port mapping
 > se utiliza primero en local depues de docker
 ```
 docker create -p27017:27017 --name monguito mongo:18
@@ -45,7 +45,7 @@ docker logs monguito
 docker run --name monguito -p27017:27017 -d mongo
 ```
 
-> ##  Docker file
+## 4.  Docker file
 ```
 FROM python:3
 
