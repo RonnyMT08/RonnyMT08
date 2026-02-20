@@ -3,13 +3,13 @@
 1. crea tu carpeta con:
 
 ```bash
-  python3 -m venv .fvenv
+  python3 -m venv .venv
 ```
 
 2. activa el entorno:
    
 ```bash
-   source .fenv/bin/activate
+   source .venv/bin/activate
 ```
 
 3. instala flask dentro del entorno:
@@ -59,3 +59,6 @@ if __name__ = '__main__':
 ```
 
 > ## Desactiva el entorno
+```bash
+  deactivate
+```
