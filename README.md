@@ -37,7 +37,3 @@
 </p>
 
 ## Ingenieria Informatica (FI-UBA)
-
-> ***I'm learning news ...***
-
-#### [Emojis](https://emojipedia.org/)
