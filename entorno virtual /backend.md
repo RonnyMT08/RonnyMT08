@@ -1,5 +1,4 @@
-# BACKEND
-<h1 align="center">ENTORNO VIRTUAL (FRONT)</h1>
+<h1 align="center">ENTORNO VIRTUAL (BACKEND)</h1>
 
 ## 1. crea tu carpeta con:
 
