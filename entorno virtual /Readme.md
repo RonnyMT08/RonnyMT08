@@ -1,24 +1,24 @@
-<h1 align="center">Crea tú entorno virtual</h1>
+<h1 align="center">ENTORNO VIRTUAL (FRONT)</h1>
 
-1. crea tu carpeta con:
+## 1. crea tu carpeta con:
 
 ```bash
   python3 -m venv .venv
 ```
 
-2. activa el entorno:
+## 2. activa el entorno:
    
 ```bash
    source .venv/bin/activate
 ```
 
-3. instala flask dentro del entorno:
+## 3. instala flask dentro del entorno:
 
 ```bash
    pip install flask
 ```
 
-4. verifica si se instalo:
+## 4. verifica si se instalo:
 
 ```bash
   pip list
