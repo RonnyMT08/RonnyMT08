@@ -9,6 +9,7 @@ docker run --name mysql-container \
   -p 3306:3306 \
   -d mysql:8.0
 ```
+
 > ### con docker compose (docker-compose.yml):
 ``` bash
 version: '3.8'
@@ -18,7 +19,7 @@ services:
     container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: tu_password
-      MYSQL_DATABASE: tienda
+      MYSQL_DATABASE: dbName
     ports:
       - "3306:3306"
     volumes:
