@@ -61,4 +61,15 @@ volumes:
 > TRUNCATE TABLE tableName; 
 > ```
 
+## Conectar docker mysql backend
+
+>
+> ``` bash
+> docker run --name backend-container \
+>   -p 5001:5001 \
+>   --link mysql-container:db \
+>   -d flask-backend
+> ```
+
+
 
