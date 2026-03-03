@@ -63,11 +63,12 @@ volumes:
 
 ## Conectar docker mysql backend
 
+> En linux
 > ``` bash
 > docker run --name backend-container \
 >   -p 5001:5001 \
 >   --link mysql-container:db \
->   -v $(pwd):/app \
+>   -v $PWD:/app \
 >   -w /app \
 >   python:3.11-slim \
 >   sh -c "pip install flask mysql-connector-python && python app.py"
